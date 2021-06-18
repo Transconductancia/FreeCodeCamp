@@ -1,0 +1,120 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background: rgb(231,242,39);
+    background: linear-gradient(180deg, rgba(231,242,39,.7) 2%, rgba(15,37,172,.7) 54%, rgba(255,0,0,.7) 100%) fixed;
+}
+
+
+.container {
+    margin: 50px auto 0 auto;
+    max-width: 700px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+#description {
+    padding: 0 30px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+
+#survey-form {
+    display: block;
+    width: 100%;
+    padding: 2rem;
+    background-color: rgb(18, 18, 18, .85);
+    border-radius: .25rem;
+    -webkit-box-shadow: 8px 12px 22px 0px rgba(0,0,0,0.35); 
+    box-shadow: 8px 12px 22px 0px rgba(0,0,0,0.35);
+}
+
+.survey-form-group {
+    margin: 0 auto 20px auto;
+    padding: 3px;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: white;
+}
+
+input, select, textarea, button{
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: 0.05em;
+    color: #495057;
+}
+
+.text-form, .form-dropdown{
+    color: #495057;
+    display: block;
+    width: 100%;
+    height: 2.3rem;
+    padding: 4px 10px;
+    border-radius: .25rem;
+    
+}
+ 
+p {
+    color: white;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-radio , .input-checkbox{
+    margin-right: 5px;
+    min-height: 1.2rem;
+    min-width: 1.2rem;
+}
+
+textarea {
+    padding:0.3rem;
+    width: 100%;
+    min-height: 100px;
+}
+
+button {
+    background-color: #37af65;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2E9756;
+}
+
+/* media querys */
+
+@media (min-width: 576px) and (max-width: 730px) {
+    .container {
+        max-width: 550px;
+    }
+}
+
+
+

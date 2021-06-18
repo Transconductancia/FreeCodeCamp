@@ -1,0 +1,92 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+:root {
+    --dark: #384259;
+    --red: #F73859;
+    --green: #7AC7C4;
+    --green-light: #C4EDDE;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--red);
+}
+
+.navbar-list{
+    display: flex;
+    margin-right: 3rem;
+    list-style-type: none;
+}
+
+.navbar-list a{
+    display: block;
+    padding: 2rem;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.navbar-list a:hover{
+    background-color: var(--green);
+}
+
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgba(75,88,117,.95) 21%, rgba(56,66,89,.95) 100%), url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size:cover;
+}
+
+h1{
+    font-size: 4.5em;
+    font-weight: 700;
+    color: var(--green-light);
+}
+
+#welcome-section > p{
+    color: var(--red);
+    margin-top: 5px;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+#projects {
+    background-color: var(--green);
+    text-align: center;
+    padding: 50px 2rem;
+}
+
+h2{
+    color: white;
+    font-size: 2.8em;
+    border-bottom: 2px white solid;
+    max-width: 600px;
+    margin: auto;
+}

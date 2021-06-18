@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Paro Unimag</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Encuesta sobre el Paro Nacional En la Unimag</h1>
+            <p id="description">esta encuesta está hecha con el fin de recolectar información de los estidiantes de la Universidad del Magdalena respecto a su posición con el paro Nacional</p>
+        </header>
+        <form id="survey-form">
+            <div class="survey-form-group">
+                <label for="name" id="name-label">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese su Nombre" class="text-form" required>
+            </div>
+            <div class="survey-form-group">
+                <label for="email" id="email-label">Correo Electrónico</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su Correo" class="text-form" required>
+            </div>
+            <div class="survey-form-group">
+                <label for="number" id="number-label">Edad</label>
+                <input type="number" name="number" id="number" placeholder="Ingrese su edad" min="1" max="100" class="text-form" required>
+            </div>
+            <div class="survey-form-group">
+                <label for="dropdown">¿A qué facultad pertenece?</label>
+                <select name="role" id="dropdown" class="form-dropdown" required>
+                    <option disabled selected>Seleccione una opción</option>
+                    <option value="ingenieria">Ingeniería</option>
+                    <option value="salud">Ciencias de la salud</option>
+                    <option value="empresariales">Ciencias empresariales</option>
+                    <option value="educacion">Ciencias de la Educación</option>
+                    <option value="basicas">Ciencias basicas</option>
+                    <option value="humanidades">Humanidades</option>
+                    
+                </select>
+            </div>
+
+            <div class="survey-form-group">
+                <p>¿Está de acuerdo con el paro nacional?</p>
+                <label>
+                    <input type="radio" name="position" id="agree" value="agree" class="input-radio">
+                    De acuerdo
+                </label>
+                <label>
+                    <input type="radio" name="position" id="idk" value="idk" class="input-radio">
+                    No sé
+                </label>
+                <label>
+                    <input type="radio" name="position" id="disagree" value="disagree" class="input-radio">
+                    En desacuerdo
+                </label>
+            </div>
+
+            <div class="survey-form-group">
+                <p>Escoja las actividades en las que ha participado</p>
+                <label>
+                    <input type="checkbox" name="options" id="marcha" value="marcha" class="input-checkbox">
+                    Marchas
+                </label>
+                <label>
+                    <input type="checkbox" name="options" id="foro" value="foro" class="input-checkbox">
+                    Foros
+                </label>
+                <label>
+                    <input type="checkbox" name="options" id="conversatorio" value="conversatorio" class="input-checkbox">
+                    Conversatorios
+                </label>
+                <label>
+                    <input type="checkbox" name="options" id="panton" value="planton" class="input-checkbox">
+                    Plantón
+                </label>
+                <label>
+                    <input type="checkbox" name="options" id="taller" value="taller" class="input-checkbox">
+                    Talleres
+                </label>
+            </div>
+
+            <div class="survey-form-group">
+                <p>¿Algún comentario o sugerencia?</p>
+                <textarea name="comments" id="comments" placeholder="ingrese su comentario aquí..."></textarea>
+            </div>
+
+            <div class="survey-form-group">
+                <button type="submit" id="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

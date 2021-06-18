@@ -1,0 +1,132 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+}
+
+:root {
+    --light: #F3F0D7;
+    --brown: #5E454B;
+    --green: #CEE5D0;
+}
+
+body {
+    background-color: var(--light);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+#navbar {
+    position: fixed;
+    padding: 10px 0;
+    border: 4px solid var(--brown);
+    height: 100%;
+    overflow: auto;
+}
+
+#navbar > header {
+    font-weight: 800;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align:justify;
+
+}
+
+#navbar  li {
+    border-top: 2px solid var(--brown);
+}
+
+#navbar  li:nth-child(5) {
+    
+    border-bottom: 2px solid var(--brown);
+}
+
+#navbar  li:hover{
+    background-color: var(--green);
+}
+
+.nav-link {
+    padding: 15px 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    display: block;
+}
+
+#main-doc{
+    padding: 20px 20px 20px 40px;
+    grid-column-start: 2;
+}
+
+header {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+article {
+    margin: 20px;
+    color: #4d4e53;
+    line-height: 1.5;
+}
+
+#main-doc ul {
+    margin:15px 0;
+    padding-left: 50px;
+}
+
+#main-doc ul > li {
+    margin-bottom:10px;
+}
+
+code {
+    font-family: 'Fira Mono', monospace;
+    font-size: .8em;
+    line-height: 2;
+    white-space: pre-line;
+    display: block;
+    margin: 15px 0;
+    padding: 20px 15px;
+    background-color: var(--green);
+    border-radius: 5px;
+}
+
+
+@media (max-width: 800px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 1fr;
+    }
+    
+    #navbar {
+        position: absolute;
+        height: 270px;
+        width: 100%;
+        background-color: var(--light);
+        
+    }
+    #main-doc{
+        grid-column-start: 0;
+        grid-row-start: 2;
+        
+    }
+    #navbar > header {
+        text-align: center;
+    
+    }
+}
+

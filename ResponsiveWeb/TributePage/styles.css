@@ -1,0 +1,160 @@
+:root {
+/* basic colors */
+    --black: #231E23;
+    --green: #39A6A3;
+    --light: #DEEEEA;
+    --pinky: #BF1363;
+}
+/* reset */
+*{
+    Margin:0;  
+    Padding:0;
+    Border:0;
+}
+
+body{
+    background-color: var(--black);
+    color: var(--black);
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+#main {
+    background-color: var(--green);
+    margin: 20px 5%;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+#title {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:bold;
+    margin: 10px 0;
+
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 15px;
+    
+}
+
+#img-div{
+    background-color: var(--light);
+    justify-content: center;
+    padding:  10px 10vw;
+    
+    
+    
+}
+#image {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+#img-caption{
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 0 10px 0;
+}
+
+#tribute-info {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+h2 {
+    margin: 40px 0;
+}
+
+footer{
+    margin: 40px -50px -15px -50px;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--light);
+    height: 100px;
+    
+}
+h3{
+    border-radius: 0 0 10px 10px;
+    padding: 20px 10px;
+    font-size: 16px;
+}
+
+
+/* prueba */
+
+.chronology {
+    max-width: 45%;
+    margin: auto;
+}
+
+.chronology p {
+    border-top: 2px dashed;
+    border-color: var(--pinky) !important;
+    margin:0; padding: 30px;
+    counter-increment: section;
+    position: relative;
+}
+  
+  
+.chronology p:nth-child(even):before {
+    content: counter(section);
+    right: 100%; 
+    margin-right: -20px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: var(--pinky);
+    text-align:center;
+    color: var(--light);
+    font-size: 110%;
+}
+  
+.chronology p:nth-child(odd):before {
+    content: counter(section);
+    left: 100%; 
+    margin-left: -20px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: var(--pinky);
+    text-align:center;
+    color:var(--light);
+    font-size: 110%;
+}
+  
+  
+  
+.chronology p:nth-child(even) {
+    border-left: 2px dashed;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-right: 30px; 
+    padding-right: 0;
+}
+  
+.chronology p:nth-child(odd) {
+    border-right: 2px dashed;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-left: 30px; 
+    padding-left: 0;
+}
+  
+.chronology p:first-child {
+    border-top: 0;
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+}
+  
+.chronology p:last-child {
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+}

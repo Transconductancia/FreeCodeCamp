@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/cef798d11a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav id="navbar">
+            
+            <header><i class="fab fa-2x fa-python"></i>Python Documentation</header>
+            <ul>
+                <li><a href="#What_is_Python?" class="nav-link">What is Python?</a></li>
+                <li><a href="#Execute_python_syntax" class="nav-link">Execute python syntax</a></li>
+                <li><a href="#Python_indentation" class="nav-link">Python indentation</a></li>
+                <li><a href="#Python_comments" class="nav-link">Python comments</a></li>
+                <li><a href="#Creating_a_comment" class="nav-link">Creating a comment</a></li>
+            </ul>
+        </nav>
+
+        <main id="main-doc">
+            <section class="main-section" id="What_is_Python?">
+                <header>What is Python?</header>
+                <article>
+                    <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+                    <p>It is used for:</p>
+                    <ul>
+                        <li>web development (server-side)</li>
+                        <li>software development</li>
+                        <li>mathematics</li>
+                        <li>system scripting</li>
+                        <li>Machine learning</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="main-section" id="Execute_python_syntax">
+                <header>Execute python syntax</header>
+                <article>
+                    <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</p>
+                    <code>print("Hello, World!")
+                            Hello, World!
+                    </code>
+                    <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p>
+                    <code>C:\Users\Your Name>python myfile.py</code>
+                </article>
+            </section>
+
+            <section class="main-section" id="Python_indentation">
+                <header>Python indentation</header>
+                <article>
+                    <p>Indentation refers to the spaces at the beginning of a code line.</p>
+                    <p>Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.</p>
+                    <P>Python uses indentation to indicate a block of code.</P>
+
+                    <code>if 5 > 2:
+                            print("Five is greater than two!")</code>
+
+                    <p>Python will give you an error if you skip the indentation:</p>
+                    <p>Syntax Error:</p>
+                    <code>if 5 > 2:
+                        print("Five is greater than two!")</code>
+                </article>
+            </section>
+
+            <section class="main-section" id="Python_comments">
+                <header>Python comments</header>
+                <article>
+                    <p>Why do we use comments:</p>
+                    <ul>
+                        <li>Comments can be used to explain Python code.</li>
+                        <li>Comments can be used to make the code more readable.</li>
+                        <li>Comments can be used to prevent execution when testing code.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="main-section" id="Creating_a_comment">
+                <header>Creating a comment</header>
+                <article>
+                    <p>Comments starts with a <span>#</span>, and Python will ignore them:</p>
+
+                    <code>#This is a comment
+                        print("Hello, World!")</code>
+                    <p>Comments can be placed at the end of a line, and Python will ignore the rest of the line:</p>
+                    <code>print("Hello, World!") #This is a comment</code>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
