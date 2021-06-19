@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/cef798d11a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <title>Document</title>
@@ -12,9 +14,9 @@
 <body>
     <nav id="navbar">
         <ul class="navbar-list">
-            <li><a href="#">Welcome</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#welcome-section">Welcome</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -25,17 +27,58 @@
 
     <section id="projects">
         <h2>Here are some of my projects</h2>
-        <div class="prjects-container">
-            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" class="project-tile">
-                <img src="https://github.com/transductancia/MisionTIC/blob/master/hell2.png?raw=true" alt="">
+        <div class="projects-container">
+            <a target="_BLANK" href="https://codepen.io/transductancia/pen/mdWGoov" class="project-tile">
+                <img class="project-img" src="https://github.com/Transconductancia/FreeCodeCamp/blob/main/ResponsiveWeb/PersonalPortfolio/Tribute.png?raw=true" alt="Project 1: Tibute page">
+                <p class="project-tittle">Tribute page</p>
             </a>
-            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" class="project-tile"></a>
-            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" class="project-tile"></a>
-            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" class="project-tile"></a>
+            
+            <a target="_BLANK" href="https://codepen.io/transductancia/pen/MWpPvom" class="project-tile">
+                <img class="project-img" src="https://github.com/Transconductancia/FreeCodeCamp/blob/main/ResponsiveWeb/PersonalPortfolio/Survey.png?raw=true" alt="Project 2: Survey form">
+                <p class="project-tittle">Survey form</p>
+            </a>
+
+            <a  target="_BLANK" href="https://codepen.io/transductancia/pen/wvJNyea" class="project-tile">
+                <img class="project-img" src="https://github.com/Transconductancia/FreeCodeCamp/blob/main/ResponsiveWeb/PersonalPortfolio/Product.png?raw=true" alt="Project 3: Product Page">
+                <p class="project-tittle">Product page</p>
+            </a>
+
+            <a target="_BLANK" href="https://codepen.io/transductancia/pen/eYvXZjG" class="project-tile">
+                <img class="project-img" src="https://github.com/Transconductancia/FreeCodeCamp/blob/main/ResponsiveWeb/PersonalPortfolio/Documentation.png?raw=true" alt="Project 4: Documentation page">
+                <p class="project-tittle">Documentation page</p>
+            </a>
         </div>
-        <a href="#" id="profile-link">my profile</a>
+        <a  target="_blank" href="https://codepen.io/transductancia" id="profile-link">
+            More info <i class="fas fa-angle-double-right"></i>
+        </a>
     </section>
     
-    <section></section>
+    <section id="contact">
+        <div>
+            <h3>Are you interested in my work?...</h3>
+        </div>
+        <div class="contact-medias">
+            <a class="contact-medias-link" href="https://www.linkedin.com/in/carlos-rodriguez-delghams-0b4297149/" target="_blank" rel="noopener noreferrer">
+                 <i class="fab fa-linkedin"></i>
+                LinkedIn
+            </a>
+
+            <a class="contact-medias-link" href="https://github.com/Transconductancia" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github-square"></i>
+                GitHub
+            </a>
+
+        
+            <a class="contact-medias-link" href="https://www.instagram.com/carlos.rodriguezdel/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram-square"></i>
+                Instagram
+            </a>
+        
+            <a class="contact-medias-link" href="mailto: carlos.rodridelghams@gmail.com" target="_blank" rel="noopener noreferrer">               <i class="fas fa-envelope-square"></i>
+                Send me an Email
+            </a>
+        </div>
+    </section>
+    <script src="main.js"></script>
 </body>
 </html>
